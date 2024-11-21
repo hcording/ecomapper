@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ecomapper"
+version = "1.0.0"
+requires-python = "~=3.10"
+dependencies = []
+
+authors = [
+    { name = "Henry Cording", email = "henry.cording@pm.me" },
+]
+description = "Pipeline for segmentation of arbitrary features in remote sensing imagery using deep learning"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = ["ecomapper", "tests"]
+doctest_optionflags = "NORMALIZE_WHITESPACE"
+
+[project.urls]
+"Homepage" = "https://github.com/hcording/ecomapper"
+"Bug Tracker" = "https://github.com/hcording/ecomapper/issues"
+
+[tool.pytype]
+inputs = ['ecomapper', 'tests']
