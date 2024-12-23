@@ -5,7 +5,7 @@
 This is the code repository for my M.Sc. thesis at Imperial College London,
 "[Segmentation of arbitrary features in very high resolution remote sensing imagery](https://arxiv.org/abs/2412.16046v1)".
 
-The initial code version at time of publication on arXiv is tagged `v1.0`. The codebase may evolve in the future with
+The initial code version at time of publication on arXiv is tagged `v1.0.0`. The codebase may evolve in the future with
 new features, bugfixes, etc.
 
 ## Abstract
