@@ -1,10 +1,10 @@
 # Segmentation of arbitrary features in very high resolution remote sensing imagery
 
 This is the code repository for my M.Sc. thesis at Imperial College London,
-"[Segmentation of arbitrary features in very high resolution remote sensing imagery](TODO)".
+"[Segmentation of arbitrary features in very high resolution remote sensing imagery](https://arxiv.org/abs/2412.16046v1)".
 
 The initial code version at time of publication on arXiv is tagged `v1.0`. The codebase may evolve in the future with
-new features, bugfixes, and so on.
+new features, bugfixes, etc.
 
 ## Abstract
 
@@ -12,22 +12,26 @@ new features, bugfixes, and so on.
 
 <summary>Click to expand</summary>
 
-Very high resolution (VHR) mapping through remote sensing (RS) imagery presents a new opportunity to inform
-decision-making and sustainable environmental practices in countless domains. Efficient processing of large scale VHR
-data requires automated tools applicable to numerous geographic regions and features. Contemporary RS studies address
-this challenge by employing deep learning (DL) models. However, solutions are designed for specific datasets or
-features, which prevents their applicability across contexts.
+Very high resolution (VHR) mapping through remote sensing (RS) imagery presents
+a new opportunity to inform decision-making and sustainable practices in
+countless domains. Efficient processing of big VHR data requires automated
+tools applicable to numerous geographic regions and features. Contemporary RS
+studies address this challenge by employing deep learning (DL) models for
+specific datasets or features, which limits their applicability across
+contexts.
 
-The present research tackles this challenge by introducing EcoMapper, a scalable solution to segment arbitrary features
-in VHR RS imagery. EcoMapper fully automates processing of geospatial data, DL model training, and inference. Models
-trained with EcoMapper successfully segmented two distinct features in a real-world UAV dataset, achieving scores
-competitive with prior studies which employed context-specific models.
+The present research aims to overcome this limitation by introducing EcoMapper,
+a scalable solution to segment arbitrary features in VHR RS imagery. EcoMapper
+fully automates processing of geospatial data, DL model training, and
+inference. Models trained with EcoMapper successfully segmented two distinct
+features in a real-world UAV dataset, achieving scores competitive with prior
+studies which employed context-specific models.
 
-To evaluate EcoMapper, many additional models were trained on permutations of principal field survey characteristics:
-feature size, ground sampling distance (GSD), and spatial extent. A relationship was discovered allowing derivation of
-optimal GSD from feature size, termed Cording index (CI). A comprehensive methodology for field surveys was developed to
-ensure DL methods can be applied effectively to collected data.
-
+To evaluate EcoMapper, many additional models were trained on permutations of
+principal field survey characteristics (FSCs). A relationship was discovered
+allowing derivation of optimal ground sampling distance from feature size,
+termed Cording Index (CI). A comprehensive methodology for field surveys was
+developed to ensure DL methods can be applied effectively to collected data.
 
 ![EcoMapper Architecture](graphical_abstract.jpg)
 
@@ -159,12 +163,20 @@ The repository uses the GPL v3 license. If this is significantly constricting yo
 
 If you find this work useful, please cite:
 
-DOI: TODO
+DOI: https://doi.org/10.48550/arXiv.2412.16046
 
 Bibtex:
 
 ```
-TODO
+@misc{cording2024segmentationarbitraryfeatureshigh,
+      title={Segmentation of arbitrary features in very high resolution remote sensing imagery}, 
+      author={Henry Cording and Yves Plancherel and Pablo Brito-Parada},
+      year={2024},
+      eprint={2412.16046},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.16046}, 
+}
 ```
 
 ## To-do list
@@ -176,5 +188,3 @@ TODO
   (useful for headless HPC environments)
 - [ ] Wider test coverage
 - [ ] Improved documentation, publish docs on readthedocs
-- [ ] Package app (e.g., with PyInstaller)
-- [ ] Publish code on PyPI
