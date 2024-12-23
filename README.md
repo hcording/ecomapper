@@ -1,5 +1,7 @@
 # Segmentation of arbitrary features in very high resolution remote sensing imagery
 
+![PyPI - Version](https://img.shields.io/pypi/v/ecomapper)
+
 This is the code repository for my M.Sc. thesis at Imperial College London,
 "[Segmentation of arbitrary features in very high resolution remote sensing imagery](https://arxiv.org/abs/2412.16046v1)".
 
