@@ -150,7 +150,7 @@ uv pip sync requirements.txt
 mim install "mmcv==2.0.0"
 pip install git+https://github.com/open-mmlab/mmsegmentation@30a3f94f3e2916e27fa38c67cc3b8c69c1893fe8
 pip install git+https://github.com/open-mmlab/mmdetection@ecac3a77becc63f23d9f6980b2a36f86acd00a8a
-pip install gdal==3.7.2
+mamba install GDAL==3.7.2 -y
 ```
 
 ## License
